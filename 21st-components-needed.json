@@ -1,0 +1,17 @@
+[
+  { "query": "Responsive navigation menu with mobile toggle and links to Home and Token Info", "format": "tsx" },
+  { "query": "Footer section with copyright text and social links", "format": "tsx" },
+  { "query": "Hero section for Home Page with title, description, and call-to-action button", "format": "tsx" },
+  { "query": "Token Information Card displaying name, symbol, total supply, and user balance", "format": "tsx" },
+  { "query": "Token Actions Card with Transfer and Approve forms and action buttons", "format": "tsx" },
+  { "query": "Skeleton Loader component for loading state placeholders", "format": "tsx" },
+  { "query": "Toast Notification component for success and error messages", "format": "tsx" },
+  { "query": "Layout component wrapping pages with Providers, Navbar, and Footer", "format": "tsx" },
+  { "query": "Theme Toggle component for light and dark mode switch", "format": "tsx" },
+  { "query": "Button component with primary and secondary variants and hover states", "format": "tsx" },
+  { "query": "Input component with styled form states and validation visuals", "format": "tsx" },
+  { "query": "Card component for generic content containers with shadow and padding", "format": "tsx" },
+  { "query": "Typography system for consistent headings, text, and links", "format": "tsx" },
+  { "query": "Modal dialog component for future interactions", "format": "tsx" },
+  { "query": "Dropdown or Select component for enhanced form controls", "format": "tsx" }
+]

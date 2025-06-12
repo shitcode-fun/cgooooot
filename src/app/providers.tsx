@@ -10,7 +10,7 @@ import { base, baseSepolia } from 'wagmi/chains';
 const WALLETCONNECT_PROJECT_ID = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || '7ab5a4842a5dfe979ced738203d2729c';
 
 const wagmiConfig = getDefaultConfig({
-  appName: 'App Name',
+  appName: 'CryptoGotchi',
   projectId: WALLETCONNECT_PROJECT_ID,
   chains: [baseSepolia, base],
   transports: {
@@ -21,16 +21,18 @@ const wagmiConfig = getDefaultConfig({
 
 const queryClient = new QueryClient();
 
+import { ToastProvider } from '@/components/Toast';
+
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>
-        <RainbowKitProvider
-          modalSize="compact" // 'compact' | 'wide'
-        >
-          {children}
+        <RainbowKitProvider modalSize="compact">
+          <ToastProvider>
+            {children}
+          </ToastProvider>
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>
   );
-} 
+}
